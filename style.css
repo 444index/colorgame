@@ -1,0 +1,99 @@
+body {
+  background-color: #aacce7;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#h1 {
+  text-align: center; 
+  color: black; 
+  font-family: 'Lucida Sans Unicode';
+}
+  
+.square {
+  float: left;
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  background-color: white;
+  margin: 1.66%;
+  border-radius: 20px;
+  transition-duration: 0.s;
+  transition: all 0.3s ease-in-out;
+}
+
+.square:hover {
+  transform: scale(1.1);
+}
+
+.square.hidden {
+  display: none;  
+}
+  
+.container {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+  
+#stripe {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  align-items: center; /* Alinea los botones verticalmente */
+  background-color:#6e95b4;
+  text-align: center;
+  width: 50%;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+  
+.selected {
+  background-color: rgb(170, 204, 231);
+}
+  
+button{
+  background-color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  height: 100%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  
+button:hover{
+  color: white;
+  background-color: rgb(121, 166, 184);
+}
+
+button:active {
+  background-color: #ad9eaf;
+}
+
+button:focus {
+  outline: none;
+}
+  
+#message{
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
